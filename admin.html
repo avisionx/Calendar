@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/animate.css">
+
+    <title>Calendar</title>
+    <style type="text/css">
+        html, body{
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+  </head>
+  <body class="container-fluid" style="height: 100vh; background-image: url('./img/img1.jpg'); background-size: cover; background-repeat: no-repeat; overflow-y: hidden;">
+
+    <div class="row">
+        <div class="col">
+            <div class="row pt-4 pl-5">
+            <div class="col-1">
+                <a href="#">
+                <img src="./img/left.svg" class="img-fluid">
+                </a>
+            </div>
+            <div class="text-center">
+                <h4 class="">March 2019</h4>            
+            </div>
+            <div class="col-1">
+                <a href="#">
+                <img src="./img/right.svg" class="img-fluid">
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="col text-right">
+            <div class="row pt-4 pr-5">
+                <div class="col">
+                    <h4 class="">Admin</h4>                    
+                </div>
+                <div class="col-auto">
+                    <a href="#" onclick="window.location.replace('./index.html');" type="button" class="btn btn-secondary btn-sm">Logout</a>
+                </div>
+            </div>                     
+        </div>
+    </div>
+    
+    <div class="container-fluid pt-5 px-5">
+        <div class="row">
+            <div class="col pt-5">
+                 <div class="row pt-5">
+                     <div class="col font-weight-bold">M</div>
+                     <div class="col font-weight-bold">T</div>
+                     <div class="col font-weight-bold">W</div>
+                     <div class="col font-weight-bold">T</div>
+                     <div class="col font-weight-bold">F</div>
+                     <div class="col font-weight-bold">S</div>
+                     <div class="col font-weight-bold">S</div>
+                 </div>
+                 <div class="row pt-4">
+                     <div class="col"></div>
+                     <div class="col"></div>
+                     <div class="col"></div>
+                     <div class="col"></div>
+                     <div class="col">01</div>
+                     <div class="col">02</div>
+                     <div class="col">03</div>
+                 </div>
+                 <div class="row pt-4">
+                     <div class="col"><span href="#" class="text-dark border border-dark rounded-circle px-2 py-2">04</span></div>
+                     <div class="col">05</div>
+                     <div class="col">06</div>
+                     <div class="col">07</div>
+                     <div class="col">08</div>
+                     <div class="col">09</div>
+                     <div class="col">10</div>
+                 </div>
+                 <div class="row pt-4">
+                     <div class="col">11</div>
+                     <div class="col"><span href="#" class="text-dark border border-dark rounded-circle px-2 py-2">12</span></div>
+                     <div class="col"><span href="#" class="text-dark border border-dark rounded-circle px-2 py-2">13</span></div>
+                     <div class="col">14</div>
+                     <div class="col">15</div>
+                     <div class="col">16</div>
+                     <div class="col">17</div>
+                 </div>
+                 <div class="row pt-4">
+                     <div class="col">18</div>
+                     <div class="col">19</div>
+                     <div class="col">20</div>
+                     <div class="col">21</div>
+                     <div class="col">22</div>
+                     <div class="col">23</div>
+                     <div class="col"><span href="#" class="text-dark border border-dark rounded-circle px-2 py-2">24</span></div>
+                 </div>
+                 <div class="row pt-4">
+                     <div class="col">25</div>
+                     <div class="col">26</div>
+                     <div class="col">27</div>
+                     <div class="col">28</div>
+                     <div class="col"><span href="#" class="text-dark border border-dark rounded-circle px-2 py-2">29</span></div>
+                     <div class="col">30</div>
+                     <div class="col"></div>
+                 </div>
+            </div>
+            <div class="col bg-white rounded p-3 pl-4" style="overflow-y: scroll; height: 80vh">
+                
+                <div class="pt-2 pb-3">
+                    <a class="row pt-2" data-toggle="modal" data-target="#modal" style="text-decoration: none" href="#">
+                        <div class="col-1">
+                            <h2 class="mb-0 text-primary">+</h2>
+                        </div>
+                        <div class="col">
+                            <h4 class="mb-0 mt-2">Add Event</h4>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="pt-2 pb-3">
+                    <div class="row pt-2">
+                        <div class="col-1">
+                            <h2 class="mb-0 text-primary">4</h2>
+                        </div>
+                        <div class="col">
+                            <h4 class="mb-0 mt-2">Workshop Back To School</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1  text-right"></div>
+                        <div class="col">
+                            <p class="mb-0 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud.</p>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-1"></div>
+                        <div class="col-auto font-weight-bold text-danger btn">24 Registraions</div>
+                        <div class="col text-right pr-4">
+                            <a href="#" class="btn btn-sm btn-primary" style="text-decoration: none"> Send Reminder </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-2 pb-3">
+                    <div class="row pt-2">
+                        <div class="col-1">
+                            <h2 class="mb-0 text-primary">12</h2>
+                        </div>
+                        <div class="col">
+                            <h4 class="mb-0 mt-2">Lunch Box Philosophers</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col">
+                            <p class="mb-0 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud.</p>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-1"></div>
+                        <div class="col-auto font-weight-bold text-danger btn">14 Registraions</div>
+                        <div class="col text-right pr-4">
+                            <a href="#" class="btn btn-sm btn-primary" style="text-decoration: none"> Send Reminder </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-2 pb-3">
+                    <div class="row pt-2">
+                        <div class="col-1">
+                            <h2 class="mb-0 text-primary">13</h2>
+                        </div>
+                        <div class="col">
+                            <h4 class="mb-0 mt-2">Get to learn python</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col">
+                            <p class="mb-0 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud.</p>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-1"></div>
+                        <div class="col-auto font-weight-bold text-danger btn">56 Registraions</div>
+                        <div class="col text-right pr-4">
+                            <a href="#" class="btn btn-sm btn-primary" style="text-decoration: none"> Send Reminder </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-2 pb-3">
+                    <div class="row pt-2">
+                        <div class="col-1">
+                            <h2 class="mb-0 text-primary">24</h2>
+                        </div>
+                        <div class="col">
+                            <h4 class="mb-0 mt-2">Meet the dean</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col">
+                            <p class="mb-0 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud.</p>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-1"></div>
+                        <div class="col-auto font-weight-bold text-danger btn">2 Registraions</div>
+                        <div class="col text-right pr-4">
+                            <a href="#" class="btn btn-sm btn-primary" style="text-decoration: none"> Send Reminder </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-2 pb-3">
+                    <div class="row pt-2">
+                        <div class="col-1">
+                            <h2 class="mb-0 text-primary">29</h2>
+                        </div>
+                        <div class="col">
+                            <h4 class="mb-0 mt-2">Django Con</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col">
+                            <p class="mb-0 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud.</p>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-1"></div>
+                        <div class="col-auto font-weight-bold text-danger btn">34 Registraions</div>
+                        <div class="col text-right pr-4">
+                            <a href="#" class="btn btn-sm btn-primary" style="text-decoration: none"> Send Reminder </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Create an event</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+  <div class="form-group">
+
+    <label for="exampleFormControlInput1">Event Title</label>
+    <input type="text" class="form-control" id="text" placeholder="Title">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Date</label>
+    <select class="form-control" id="date">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+      <option>11</option>
+      <option>12</option>
+      <option>13</option>
+      <option>14</option>
+      <option>15</option>
+      <option>16</option>
+      <option>17</option>
+      <option>18</option>
+      <option>19</option>
+      <option>20</option>
+      <option>21</option>
+      <option>22</option>
+      <option>23</option>
+      <option>24</option>
+      <option>25</option>
+      <option>26</option>
+      <option>27</option>
+      <option>28</option>
+      <option>29</option>
+      <option>30</option>
+      <option>31</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Image</label>
+    <input type="file" class="form-control-file" id="image">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Description</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Create</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    	
+
+
+    	
+
+    </script>
+  </body>
+</html>
